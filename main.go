@@ -15,8 +15,6 @@ func main() {
 	module := parser.String("m", "module", &argparse.Options{Required: true, Help: "Specify what module you want to use. like Mode, FocalLength etc "})
 	err := parser.Parse(os.Args)
 	if err != nil {
-		// In case of error print error and print usage
-		// This can also be done by passing -h or --help flags
 		fmt.Print(parser.Usage(err))
 	}
 	fname := "sample.jpg"
@@ -50,10 +48,9 @@ func main() {
         	tm, _ := x.DateTime()
 			fmt.Println("Taken: ", tm)            
     default:
-        fmt.Println("Invalid Request")
+        fmt.Println("Invalid Request. Specify correct mode")
     }
     
-	
 
 }
 
