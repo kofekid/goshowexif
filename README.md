@@ -2,7 +2,7 @@
  Simple script in Golang to show EXIF data from Image
 
 
-Awailable modes:
+Available modes:
 * lensmodel  ( Show lense model)
 * lensmake ( Show lense make)
 * Model (Show Camera model)
@@ -12,25 +12,34 @@ Awailable modes:
 
 
 
-# usage 
+# Usage 
 
 * Install all needed dependecies 
 
 For reading exif : 
 
-`go get github.com/rwcarlsen/goexif/exif`
-`go get 	"github.com/rwcarlsen/goexif/mknote"`
+``` 
+go get github.com/rwcarlsen/goexif/exif 
+```
+
+``` 
+go get github.com/rwcarlsen/goexif/mknote 
+```
 
 For arg parsing : 
 
-`go get 	"github.com/akamensky/argparse"`
+```
+go get 	"github.com/akamensky/argparse"
+```
 
 
 
-* run the script 
+* Run the script 
 
 
-`go run main.go -m <mode here>`
+```
+go run main.go -m <mode here>
+```
 
 
 
